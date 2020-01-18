@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>C Programming | Week 2 Tasks</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Week 2 Tasks</h1>
+					<a href="#/2">
+                        <img width="238" height="238" data-src="assets/images/logo.png"  >
+                    </a>
+                </section>
+                <section>
+                    <section>
+						<h2>Task 1</h2>
+                        <p>
+                            WAP to calculate the area of square.
+                        </p>
+					</section>
+					<section>
+						<blockquote style="font-size: 1vw;font-style: italic;" >
+                            <span style="color: greenyellow;">Hint:</span>    
+                                $$ Area = Side * Side $$
+                        </blockquote>
+					</section>
+                    
+                    
+                </section>
+                <section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+                    <section>
+                        <h2>Task 2 (Experiment 2)</h2>
+                        <p>
+                            WAP to calculate the simple interest taking principal,rate of interest and no. of years as inputs from user.
+                        </p>    
+                    </section>
+					<section>
+                        <blockquote style="font-size: 1vw;font-style: italic;" >
+                            <span style="color: greenyellow;">Hint:</span>    
+                            $$ SI = Principal * ROI * Years $$
+                        </blockquote>
+                    </section>
+                </section>
+                <section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+                    <section>
+                        <h2>Task 3 (Experiment 3)</h2>
+                        <p>
+                            WAP to calculate the sum and average of three numbers.
+                        </p>
+                    </section>
+                    <section>
+                        <blockquote style="font-size: 1vw;font-style: italic;" >
+                            <span style="color: greenyellow;">Hint:</span>    
+                            $$ Average = \frac{(NUM1 + NUM2 + NUM3)}{3} $$
+                        </blockquote>
+                    </section> 
+                </section>
+				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+                    <section>
+                        <h2>Task 4 (Experiment 4)</h2>
+                        <p>
+                            WAP to calculate perimeter and area of a circle with the help of constants.
+                        </p>
+                    </section>
+                    <section>
+                        <blockquote style="font-size: 1vw;font-style: italic;" >
+                            <span style="color: greenyellow;">Hint:</span><br>    
+                            $$ Perimeter = 2\pi r $$
+                            $$ Area = 4\pi r^2 $$
+                        </blockquote>
+                    </section>
+                </section>
+                
+                <section >
+					<h2>Task 5 : (Bonus Task)</h2>
+					<p>
+						WAP to calculate the resistance required (R) to be connected in series with the LED to protect it from blowing up when Voltage (V) is applied.
+                    </p>
+                    <blockquote style="font-size: 1vw;font-style: italic;" >
+                        &ldquo;<span style="color: greenyellow;">Hint:</span> Max current that can be handled by LED is 20mA. Use ohm's Law.&rdquo;
+                        
+					</blockquote>
+                    <img class="" style="background: rgba(255, 255, 255, 1);" data-src="assets/images/week2_task5.png"  >
+                </section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				hash: true,
+                math: {
+                    mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                    config: 'TeX-AMS_HTML-full', // See http://docs.mathjax.org/en/latest/config-files.html
+                    // pass other options into `MathJax.Hub.Config()`
+                    TeX: { Macros: { RR: "{\\bf R}" } }
+                },
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/highlight/highlight.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/math/math.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
