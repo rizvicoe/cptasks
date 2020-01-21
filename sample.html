@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>C Programming | Week 2 Tasks</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
@@ -25,27 +25,20 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
-					<h1>Week 2</h1>
-					<h3>Basic Input / Output</h3>
-					<p>
-						<small>Todays Tasks <a href="week2.html">Click Here</a></small>
-					</p>
-				</section>
-				<section>
-					<h1>Week 2 (Additional Tasks)</h1>
-					<h3>Basic Input / Output</h3>
-					<p>
-						<small>Practice Tasks <a href="week2.1.html">Click Here</a></small>
-					</p>
-				</section>
-				<section>
-					<h1>Week 1</h1>
-					<h3>Basic Input / Output</h3>
-					<p>
-						<small>Todays Tasks <a href="week1.html">Click Here</a></small>
-					</p>
-				</section>
+				
+                <section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+                    <section>
+                        <h2>Online C Compiler</h2>
+                        <p>
+                            Any OS
+						</p>
+						<a style="font-style: normal;">http://onlinegdb.com</a>
+                        <p>
+                            Prof. Shiburaj 
+                        </p>
+                    </section>
+                    
+                </section>
 				
 			</div>
 		</div>
@@ -58,11 +51,18 @@
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
 				hash: true,
+                math: {
+                    mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                    config: 'TeX-AMS_HTML-full', // See http://docs.mathjax.org/en/latest/config-files.html
+                    // pass other options into `MathJax.Hub.Config()`
+                    TeX: { Macros: { RR: "{\\bf R}" } }
+                },
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/highlight/highlight.js' },
-					{ src: 'plugin/notes/notes.js', async: true }
+					{ src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/math/math.js', async: true }
 				]
 			});
 		</script>
