@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>C Programming | Week 2 Tasks</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+                    <h1>Week 4 Tasks</h1>
+                    <h3>Decision Making</h3>
+					<a href="#/2">
+                        <img width="238" style="border: none;" height="238" data-src="assets/images/week4-logo.jpg"  >
+                    </a>
+                </section>
+                <section>
+                    <section>
+						<h2>Task 1</h2>
+                        <p>
+                            Write an algorithm and program to find if the entered character is a vovel or not.
+                        </p>
+                    </section>
+                    <section>
+						<p>
+                            Vovels : a,e,i,o,u
+                        </p>
+					</section>
+                </section>
+                <section>
+                    <section>
+                        <h2>Task 2</h2>
+                        <p>
+                            Draw a flowchart and program to convert a lower case character to uppercase and vise-versa.
+                        </p>    
+                    </section>
+                    <section>
+                        <p>
+                            Hint: Use ASCII Table
+                        </p>   
+                        <a href="assets/images/ascii-table.png">
+                            <img width="238" style="border: none;" height="238" data-src="assets/images/ascii-table.png"  >
+                        </a>
+                        <h5>>> Click Image <<</h5>
+                    </section>
+                </section>
+                
+				<section >
+                    <section>
+                        <h2>Task 3</h2>
+                        <p>
+                            WAP to find the roots of the quadratic equation with real roots using math library.
+                        </p>
+                    </section>
+                    <section>
+                        <p style="font-size: 3vw;font-style: italic;" >
+                            <span style="color: greenyellow;">Hint:</span><br>   
+                            $$ ax^2+bx+c=0 $$
+                            $$ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
+                        </p>
+                    </section>
+                </section>
+                
+                <section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom" >
+                    <section >
+                        <h2>Task 4 (Experiment 7)</h2>
+                        <p>
+                            WAP to check if the year entered is a leap year or not.
+                        </p>
+                    </section>
+                    <section >
+                        <h2>Hint</h2>
+                        <p>
+                            A year is leap year if the following conditions are satisfied:
+                            <ul>
+                                <li>Year is multiple of 400.</li>
+                                <li>Year is multiple of 4 and not multiple of 100.</li>
+                            </ul>
+                        </p>
+                    </section>
+                </section>
+                <section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+                    <section>
+                        <h2>Task 5 (Experiment 8)</h2>
+                        <p>
+                            WAP to find the body mass index of the user when user enters height and weight. Also find the BMI category to which the user belongs with elseif ladder.
+                        </p>
+                        <p>
+                            <b>BMI Categories:</b>
+                            <ol>
+                                <li>Underweight = <18.5</li>
+                                <li>Normal weight = 18.5–24.9</li>
+                                <li>Overweight = 25–29.9</li>
+                                <li>Obesity = BMI of 30 or greater</li>
+                            </ol>
+                        </p>
+                    </section>
+                    <section>
+                        <p>
+                            Hint : $$ BMI = \frac{Weight}{Height^2} $$
+                            <span style="color: black;font-size: 1.5vw;">Weight in Kg, Height in meters</span> 
+                        </p>
+                    </section>
+                </section>
+                <section >
+                    <section >
+                        <h2>Task 6 (Bonus Task)</h2>
+                        <p>
+                            WAP to read three integer values from the keyboard and displays the output stating that they are sides of right angled triangle or not.
+                        </p>
+                    </section>
+                    <section>
+                        <p>
+                            For a right angled triangle to be valid it must satisfies the following criteria:-
+                            <ul>
+                                <li>a, b and c should be greater then 0.</li>
+                                <li>Sum of any two sides of triangle must be greater than the third side.</li>
+                                <li>Pythagorean Theorem i.e., $ a^2 + b^2 = c^2 $.</li>
+                            </ul>
+                        </p>
+                    </section>
+                </section>
+
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				hash: true,
+                math: {
+                    mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                    config: 'TeX-AMS_HTML-full', // See http://docs.mathjax.org/en/latest/config-files.html
+                    // pass other options into `MathJax.Hub.Config()`
+                    TeX: { Macros: { RR: "{\\bf R}" } }
+                },
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/highlight/highlight.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/math/math.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
