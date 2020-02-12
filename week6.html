@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>C Programming | Week 6 Tasks</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+                    <h1>Week 6 Tasks</h1>
+                    <h3>Looping </h3>
+                    <h5>$ for loop $</h5>
+					<a href="#/2">
+                        <img width="238" style="border: none;" height="238" data-src="assets/images/looping.png"  >
+                    </a>
+                </section>
+                <section >
+                    <section>
+                        <h2>Task 25</h2>
+                        <p>
+                            WAP to find if the entered number is a prime number or not.
+                        </p>
+                    </section>
+                    <section>
+                        <p style="font-size: 3vw;font-style: italic;" >
+                            <span style="color: greenyellow;">Hint:</span><br>   
+                            A prime number is a natural number greater than 1 that cannot be formed by multiplying two smaller natural numbers.
+                        </p>
+                    </section>
+                </section>
+                <section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+                    <section>
+                        <h2>Task 26  (Experiment 10)</h2>
+                        <p>
+                            WAP to take integer value from the user and print the sum of its digits.
+                        </p>    
+                    </section>
+                    <section>
+                        <p>
+                            $$ Eg: 3421 => 3+4+2+1 => 11 $$ 
+                        </p>   
+                    </section>
+                </section>
+                <!--<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+                    <section>
+                        <h2>Task 26  (Experiment 10)</h2>
+                        <p>
+                            WAP to find the LCM & GCD of two numbers entered by the user.
+                        </p>    
+                    </section>
+                    <section>
+                        <p>
+                            LCM : is the smallest positive integer that is divisible by both the numbers
+                        </p>
+                        <p>
+                            GCD :  is the largest positive integer that divides each of the integers.
+                        </p>   
+                    </section>
+                </section>-->
+                
+				<section  data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+                    <section>
+                        <h2>Task 27 (Experiment 11)</h2>
+                        <p>
+                            WAP to print Fibonacci Series till number entered by the user is reached.
+                        </p>
+                    </section>
+                    <section>
+                        <p>Fibonacci Series is a sequence of numbers in which each number is the sum of the two preceding ones, starting from 0 and 1.</p>
+                        <p>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ... </p>
+                    </section>
+                </section>
+                
+                <section  data-transition="slide" data-background="#4d7e65" data-background-transition="zoom" >
+                    <section >
+                        <h2>Task 28 (Experiment 12)</h2>
+                        <p>
+                            WAP to print the following pattern.
+                        </p>
+                        <a href="./assets/Patterns.pdf">List of Patterns</a>
+                    </section>
+                </section>
+
+                <section  >
+                    <section >
+                        <h2>Task 29 (Bonus Task)</h2>
+                        <p>
+                            WAP to the following series where user enters the value for $n$. Also compute the value of the series. 
+                        </p>
+                        <p>
+                            $$ 1 + \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + ... + \frac{1}{2^n} $$
+                        </p>
+                        <p>
+
+                        </p>
+                    </section>
+                </section>
+                
+
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				hash: true,
+                math: {
+                    mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                    config: 'TeX-AMS_HTML-full', // See http://docs.mathjax.org/en/latest/config-files.html
+                    // pass other options into `MathJax.Hub.Config()`
+                    TeX: { Macros: { RR: "{\\bf R}" } }
+                },
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/highlight/highlight.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/math/math.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
