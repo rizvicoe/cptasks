@@ -52,7 +52,7 @@
                 <h2>Step 5</h2>
                 <h3 style="color: blueviolet;">Is this the Symbol in your Mind?</h3>
             </div>
-            <div class="text-center" style="font-size: 9vw;color : #299617">{{ sel_sym }}</div>
+            <div class="text-center" style="font-size: 62px;color : #299617">{{ sel_sym }}</div>
             <div class="text-center py-5">
                 <button class="btn btn-success" @click="gotoStep1()" >Restart</button>
             </div>
@@ -89,11 +89,11 @@
                         this.step3 = false;
                         this.step4 = true;
                         this.sel_sym = this.sym[Math.floor(Math.random() * this.sym.length)];
-                        for(i=11;i<=99;i++){
+                        for(i=1;i<=99;i++){
                             if(i%9==0){
-                                this.message = this.message + '<div  class="col-md-2 text-center">'+i+' = '+this.sel_sym+'</div>';
+                                this.message = this.message + '<div  class="col-4 text-center ">'+i+' = '+this.sel_sym+'</div>';
                             }else{
-                                this.message = this.message + '<div  class="col-md-2 text-center">'+i+' = '+this.sym[Math.floor(Math.random() * this.sym.length)]+'</div>';
+                                this.message = this.message + '<div  class="col-4 text-center ">'+i+' = '+this.sym[Math.floor(Math.random() * this.sym.length)]+'</div>';
                             }
                         }
                         
