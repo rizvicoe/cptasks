@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>C Programming | Week 9 Tasks</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+                    <h1>Week 9 Tasks</h1>
+                    <h3>Arrays &amp; Strings</h3>
+					<a href="#/2">
+                        <img width="238" style="border: none;" height="238" data-src="assets/images/c-arrays.jpg"  >
+                    </a>
+                </section>
+                <section >
+                    <section>
+                        <h2>Task 40</h2>
+                        <p>
+                            Write a program in C to read n number of values in an array and display it in reverse order
+                        </p>
+                    </section>
+                </section>
+                <section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+                    <section>
+                        <h2>Task 41  (Experiment 17)</h2>
+                        <p>
+                            Write a program in C to sort elements of the array in aescending order.
+                        </p>    
+                    </section>
+                    <section>
+                        <p>There are various methods of sorting</p>
+                        <table style="font-size: 16px;">
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li><a style="color: chartreuse;" href="https://www.geeksforgeeks.org/selection-sort/">Selection Sort</a></li>
+                                        <li><a style="color: chartreuse;"  href="https://www.geeksforgeeks.org/bubble-sort/">Bubble Sort</a></li>
+                                        <li><a href="https://www.geeksforgeeks.org/recursive-bubble-sort/">Recursive Bubble Sort</a></li>
+                                        <li><a style="color: chartreuse;"  href="https://www.geeksforgeeks.org/insertion-sort/">Insertion Sort</a></li>
+                                        <li><a href="https://www.geeksforgeeks.org/recursive-insertion-sort/">Recursive Insertion Sort</a></li>
+                                        <li><a style="color: chartreuse;"  href="https://www.geeksforgeeks.org/merge-sort/">Merge Sort</a></li>
+                                        <li><a href="https://www.geeksforgeeks.org/iterative-merge-sort/">Iterative Merge Sort</a></li>
+                                        <li><a style="color: chartreuse;"  href="https://www.geeksforgeeks.org/quick-sort/">Quick Sort</a></li>
+                                        <li><a href="https://www.geeksforgeeks.org/iterative-quick-sort/">Iterative Quick Sort</a></li>
+                                        <li><a style="color: chartreuse;"  href="https://www.geeksforgeeks.org/heap-sort/">Heap Sort</a></li>
+                                        <li><a href="https://www.geeksforgeeks.org/counting-sort/">Counting Sort</a></li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                            
+                                        <li><a href="https://www.geeksforgeeks.org/radix-sort/">Radix Sort</a></li>
+                                        <li><a href="https://www.geeksforgeeks.org/bucket-sort-2/">Bucket Sort</a></li>
+                                        <li><a href="https://www.geeksforgeeks.org/shellsort/">ShellSort</a></li>
+                                        <li><a href="https://www.geeksforgeeks.org/timsort/">TimSort</a></li>
+                                        <li><a href="https://www.geeksforgeeks.org/comb-sort/">Comb Sort</a></li>
+                                        <li><a href="https://www.geeksforgeeks.org/pigeonhole-sort/">Pigeonhole Sort</a></li>
+                                        <li><a href="https://www.geeksforgeeks.org/cycle-sort/">Cycle Sort</a></li>
+                                        <li><a href="https://www.geeksforgeeks.org/cocktail-sort/">Cocktail Sort</a></li>
+                                        <li><a href="https://www.geeksforgeeks.org/strand-sort/">Strand Sort</a></li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li><a href="https://www.geeksforgeeks.org/bitonic-sort/">Bitonic Sort</a></li>
+                                        <li><a href="https://www.geeksforgeeks.org/pancake-sorting/">Pancake sorting</a></li>
+                                        <li><a href="https://www.geeksforgeeks.org/binary-insertion-sort/">Binary Insertion Sort</a></li>
+                                        <li><a href="https://www.geeksforgeeks.org/bogosort-permutation-sort/">BogoSort or Permutation Sort</a></li>
+                                        <li><a href="https://www.geeksforgeeks.org/gnome-sort-a-stupid-one/">Gnome Sort</a></li>
+                                        <li><a href="https://www.geeksforgeeks.org/sleep-sort-king-laziness-sorting-sleeping/">Sleep Sort – The King of Laziness / Sorting while Sleeping</a></li>
+                                        <li><a href="https://www.geeksforgeeks.org/structure-sorting-in-c/">Structure Sorting (By Multiple Rules) in C++</a></li>
+                                        <li><a href="https://www.geeksforgeeks.org/stooge-sort/">Stooge Sort</a></li>
+                                        <li><a href="https://www.geeksforgeeks.org/tag-sort/">Tag Sort (To get both sorted and original)</a></li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                            
+                                        <li><a href="https://www.geeksforgeeks.org/tree-sort/">Tree Sort</a></li>
+                                        <li><a href="https://www.geeksforgeeks.org/cartesian-tree-sorting/">Cartesian Tree Sorting</a></li>
+                                        <li><a href="https://www.geeksforgeeks.org/odd-even-sort-brick-sort/">Odd-Even Sort / Brick Sort</a></li>
+                                        <li><a href="https://www.geeksforgeeks.org/quicksort-on-singly-linked-list/">QuickSort on Singly Linked List</a></li>
+                                        <li><a href="https://www.geeksforgeeks.org/quicksort-for-linked-list/">QuickSort on Doubly Linked List</a></li>
+                                        <li><a href="https://www.geeksforgeeks.org/3-way-quicksort-dutch-national-flag/">3-Way QuickSort (Dutch National Flag)</a></li>
+                                        <li><a href="https://www.geeksforgeeks.org/merge-sort-for-linked-list/">Merge Sort for Linked Lists</a></li>
+                                        <li><a href="https://www.geeksforgeeks.org/merge-sort-for-doubly-linked-list/">Merge Sort for Doubly Linked List</a></li>
+                                        <li><a href="https://www.geeksforgeeks.org/3-way-merge-sort/">3-way Merge Sort</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                        <small>
+                        
+                        
+                        
+                    </small>
+                    </section>
+                </section>
+                <section  >
+                    <section >
+                        <h2>Task 42</h2>
+                        <p>
+                            Write a program in C to find the second largest element in an array. 
+                        </p>
+                    </section>
+                </section>
+				<section  data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+                    <section>
+                        <h2>Task 43</h2>
+                        <p>
+                            Write a program in C for multiplication of two square Matrices.
+                        </p>
+                    </section>
+                    <section>
+                        <h3>HINT</h3>
+                        <img src="./assets/images/matrix-multiplication5.jpg" alt="">
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>Task 44</h2>
+                        <p>Write a program in C to calculate determinant of a 3 x 3 matrix.</p>
+                    </section>
+                    <section>
+                        <h3>HINT</h3>
+                        <img src="./assets/images/Determinant-of-3x3-matrix.png" alt="">
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>Task 45</h2>
+                        <p>Write a program in C to find the length of a string without using library function</p>
+                    </section>
+                    <section>
+                        <h3>HINT</h3>
+                        <p>Strings end with NULL character $ \0 $</p>
+                    </section>
+                </section>
+                <section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+                    <section>
+                        <h2>Task 46  (Experiment 18)</h2>
+                        <p>
+                            Write a program in C to check if the entered string is palindrome or not.
+                        </p>    
+                    </section>
+                    <section>
+                        <h3>HINT</h3>
+                        <p>A palindrome is a word, number, phrase, or other sequence of characters which reads the same backward as forward, such as madam, racecar.</p>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>Task 47</h2>
+                        <p>Write a program in C reverse a string using string.h library</p>
+                    </section>
+                </section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				hash: true,
+                math: {
+                    mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                    config: 'TeX-AMS_HTML-full', // See http://docs.mathjax.org/en/latest/config-files.html
+                    // pass other options into `MathJax.Hub.Config()`
+                    TeX: { Macros: { RR: "{\\bf R}" } }
+                },
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/highlight/highlight.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/math/math.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
