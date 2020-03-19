@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guesser Game</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body class="">
+    <div class="container align-middle" id="app">
+        <h1 class="text-center block py-5">Guesser Game</h1>
+        <div id="step1" v-if="step1">
+            <div class="text-center">
+                <h2>Step 1</h2>
+                <h3 style="color: blueviolet;">Please select a number between 11 to 99</h3>
+            </div>
+            <div class="text-center py-5">
+                <button class="btn btn-success" v-on:click="gotoStep2" >Next>></button>
+            </div>
+        </div>
+        <div id="step2" v-if="step2">
+            <div class="text-center">
+                <h2>Step 2</h2>
+                <h3 style="color: #FA5B3D;">Add the digits of the selected number?</h3>
+            </div>
+            <div class="text-center py-5">
+                <button class="btn btn-success" @click="gotoStep3()" >Next>></button>
+            </div>
+        </div>
+        <div id="step3" v-if="step3">
+            <div class="text-center">
+                <h2>Step 3</h2>
+                <h3 style="color: #299617;">Subtract the result from the original number</h3>
+            </div>
+            <div class="text-center py-5">
+                <button class="btn btn-success" @click="gotoStep4()" >Next>></button>
+            </div>
+        </div>
+        <div id="step4" v-if="step4">
+            <div class="text-center">
+                <h2>Step 4</h2>
+                <h3 style="color: blueviolet;">Please check if the resultant number is present in the below table. If yes then remember the symbol in front of it.</h3>
+            </div>
+            <div class="row" v-html="message">
+            </div>
+            <div class="text-center py-5">
+                <button class="btn btn-success" @click="gotoStep5()" >Next>></button>
+            </div>
+        </div>
+        <div id="step5" v-if="step5">
+            <div class="text-center">
+                <h2>Step 5</h2>
+                <h3 style="color: blueviolet;">Is this the Symbol in your Mind?</h3>
+            </div>
+            <div class="text-center" style="font-size: 62px;color : #299617">{{ sel_sym }}</div>
+            <div class="text-center py-5">
+                <button class="btn btn-success" @click="gotoStep1()" >Restart</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+                el: '#app',
+                data: {
+                    step1 : true,
+                    step2 : false,
+                    step3 : false,
+                    step4 : false,
+                    step5 : false,
+                    message : '',
+                    sym: ['!','@','#','$','%','^','&','*','+','~','<','>','?','|'],
+                    sel_sym: ''
+                },
+                methods: {
+                    gotoStep2: function() {
+                        this.step1 = false;
+                        this.step2 = true;
+                    },
+                    gotoStep3: function() {
+                        this.step1 = false;
+                        this.step2 = false;
+                        this.step3 = true;
+                    },
+                    gotoStep4: function() {
+                        this.step1 = false;
+                        this.step2 = false;
+                        this.step3 = false;
+                        this.step4 = true;
+                        this.sel_sym = this.sym[Math.floor(Math.random() * this.sym.length)];
+                        for(i=1;i<=99;i++){
+                            if(i%9==0){
+                                this.message = this.message + '<div  class="col-4 text-center ">'+i+' = '+this.sel_sym+'</div>';
+                            }else{
+                                this.message = this.message + '<div  class="col-4 text-center ">'+i+' = '+this.sym[Math.floor(Math.random() * this.sym.length)]+'</div>';
+                            }
+                        }
+                        
+                    },
+                    gotoStep5: function() {
+                        this.step1 = false;
+                        this.step2 = false;
+                        this.step3 = false;
+                        this.step4 = false;
+                        this.step5 = true;
+                    },
+                    gotoStep1: function() {
+                        this.step1 = true;
+                        this.step2 = false;
+                        this.step3 = false;
+                        this.step4 = false;
+                        this.step5 = false;
+
+                    },
+                }
+            })
+    </script>
+</body>
+</html>
